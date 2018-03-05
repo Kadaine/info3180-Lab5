@@ -52,7 +52,7 @@ def login():
                 flash('Logged in successfully.')
                 return redirect(url_for("secure_page"))
             else:
-                flash('Username or Password is incorrect.')
+                flash('Incorrect username or password.')
     return render_template("login.html", form=form)
 
 @app.route("/secure_page")
